@@ -25,6 +25,6 @@ jobs:
         
     - name: Build the Docker image
       run: | 
-        docker build . --file pydantic-mcp-python-run/naive/Dockerfile --tag pydantic-mcp-run-python:$(date +%s)
-        docker push ghcr.io/semaverse/pydantic-mcp-run-python:latest
+        docker build . --file pydantic-mcp-python-run/naive/Dockerfile --tag semaverse/pydantic-mcp-run-python:$(date +%s)
+        docker push ghcr.io/semaverse/pydantic-mcp-run-python:$(date +%s)
 
