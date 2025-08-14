@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  tag: naive-$(date +%s)
-  imagename: ghcr.io/semaverse/pydantic-mcp-run-python:{{ env.tag }}
-
 jobs:
 
   build:
@@ -26,7 +22,9 @@ jobs:
         registry: ghcr.io
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
-        
+    - name: Set image name with date
+      run: |
+          echo "imagename=image-$(date +%Y-%m-%d)" >> $GITHUB_ENV       
     - name: Build the Docker image
       run: | 
         docker build . --file pydantic-mcp-python-run/naive/Dockerfile --tag ${{ env.imagename }}
