@@ -7,7 +7,8 @@ on:
     branches: [ "main" ]
 
 env:
-  imagename: ghcr.io/semaverse/pydantic-mcp-run-python:naive-$(date +%s)
+  now: $(date +%s)
+  imagename: ghcr.io/semaverse/pydantic-mcp-run-python:naive-${{ env.now }}
 
 jobs:
 
