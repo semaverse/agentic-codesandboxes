@@ -2,52 +2,27 @@
 Description and Utilization of Read Eval Print Loop (REPL) aka known as Code Sandboxes for Agentic Usecases
 
 # Technology Map Agentic REPL
-
-
 ```mermaid
-  graph LR
-
-    subgraph Languages
-      L1{Python}
-      L2{Typscript}
-    end
-
-    subgraph Hosting
-      D1[Selfhosted]
-      D2[Cloud Service]
-    end
-
-    subgraph AI Technoligy
-      AI1[MCP-SSE]
-      AI2[MCP-STDIO]
-    end
-
-    subgraph Projects
-      P1("Pydantic MCP Run Python")
-      P1 --> L1
-      P1 --> D1
-      P1 --> AI1
-  
-      P2(E2b.dev)
-      P2 --> L1
-      P2 --> D2
-      P2 --> |?| AI1
-  
-      P3(Daytona.io)
-      P3 --> L1
-      P3 --> L2
-      P3 --> D2
-      P3 --> |?| AI1
-  
-      P4(mcp-python)
-      P4 --> L1
-      P4 --> D2
-      P4 --> AI2
-  
-      P5(Conda MCP Executor)
-    end
-   
-
+mindmap
+  root((AI Agentic REPL))
+    By Language
+      Python
+        ("Pydantic MCP Run Python")
+        (E2b.dev)
+        (Daytona.io)
+        (mcp-python)
+        (Conda MCP Executor)
+      Typescript
+        (Daytona.io)
+          
+    By Deployment
+      Self Hosted
+         ("Pydantic MCP Run Python")
+         (mcp-python)
+         (Conda MCP Executor)
+      Cloud Service
+         (E2b.dev)
+         (Daytona.io)
 ```
 ## Listview
 
