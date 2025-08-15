@@ -25,9 +25,9 @@ jobs:
         password: ${{secrets.GITHUB_TOKEN}}
     - name: Set image name with date
       run: |
-          echo "imagename=ghcr.io/semaverse/pydantic-mcp-python-run:naive-$(date +%Y-%m-%d)" >> $GITHUB_ENV       
+          echo "imagename=ghcr.io/semaverse/pydantic-mcp-python-run:basic-$(date +%Y-%m-%d)" >> $GITHUB_ENV       
     - name: Build the Docker image
       run: | 
-        docker build . --file pydantic-mcp-python-run/naive/Dockerfile --tag ${{ env.imagename }}
+        docker build . --file pydantic-mcp-python-run/basic/Dockerfile --tag ${{ env.imagename }}
         docker push ${{ env.imagename }}
 
