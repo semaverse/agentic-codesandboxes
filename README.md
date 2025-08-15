@@ -11,6 +11,7 @@ mindmap
         (E2b.dev)
         (Daytona.io)
         (mcp-python)
+        (Conda MCP Executor)
       Typescript
         (Daytona.io)
           
@@ -18,6 +19,7 @@ mindmap
       Self Hosted
          ("Pydantic MCP Run Python")
          (mcp-python)
+         (Conda MCP Executor)
       Cloud Service
          (E2b.dev)
          (Daytona.io)
@@ -30,3 +32,4 @@ mindmap
 | E2b.dev | https://e2b.dev/docs/quickstart |  |
 | Daytona.io | https://www.daytona.io/ |  |
 | mcp-python | https://github.com/hdresearch/mcp-python ||
+| Conda MCP Executor | https://github.com/bazinga012/mcp_code_executor ||
