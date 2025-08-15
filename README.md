@@ -20,5 +20,5 @@ mindmap
 
 | Project | Link | In this Repo |
 | --------| -----| ------------ | 
-| Pydantic MCP Run Python | https://ai.pydantic.dev/mcp/run-python/ | .. |
+| Pydantic MCP Run Python | https://ai.pydantic.dev/mcp/run-python/ | [pydantic-mcp-python-run](python/pydantic-mcp-python-run/) |
 | E2b | https://e2b.dev/docs/quickstart |  |
