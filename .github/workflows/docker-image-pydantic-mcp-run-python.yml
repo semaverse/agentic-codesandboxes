@@ -23,11 +23,10 @@ jobs:
         registry: ghcr.io
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
-    - name: Set image name with date
-      run: |
-          echo "imagename=ghcr.io/semaverse/pydantic-mcp-python-run:basic-$(date +%Y-%m-%d)" >> $GITHUB_ENV       
-    - name: Build the Docker image
+   
+    - name: Build the Docker image pydantic-mcp-python
       run: | 
-        docker build . --file pydantic-mcp-python-run/basic/Dockerfile --tag ${{ env.imagename }}
-        docker push ${{ env.imagename }}
+        echo "imagename_pydantic-mcp-python=ghcr.io/semaverse/pydantic-mcp-python-run:basic-$(date +%Y-%m-%d)" >> $GITHUB_ENV       
+        docker build . --file python/pydantic-mcp-python-run/basic/Dockerfile --tag ${{ env.imagename_pydantic-mcp-python }}
+        docker push ${{ env.imagename_pydantic-mcp-python }}
 
