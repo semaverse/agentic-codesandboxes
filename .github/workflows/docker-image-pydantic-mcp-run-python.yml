@@ -1,4 +1,4 @@
-name: Build pydantic-mcp-python-run
+name: pydantic-mcp-python-run Image Builder
 
 on:
   pull_request:
