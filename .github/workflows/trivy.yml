@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: trivy pydantic-mcp-python-run
+name: pydantic-mcp-python-run trivyscan
 
 on:
   pull_request:
