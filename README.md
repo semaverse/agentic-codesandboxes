@@ -14,12 +14,18 @@ mindmap
         (Conda MCP Executor)
       Typescript
         (Daytona.io)
+      JavaScript
+        (microsandbox)
+      Rust
+        (microsandbox)
+    
           
     By Deployment
       Self Hosted
          ("Pydantic MCP Run Python")
          (mcp-python)
          (Conda MCP Executor)
+         (microsandbox)
       Cloud Service
          (E2b.dev)
          (Daytona.io)
@@ -33,3 +39,4 @@ mindmap
 | Daytona.io | https://www.daytona.io/ |  |
 | mcp-python | https://github.com/hdresearch/mcp-python ||
 | Conda MCP Executor | https://github.com/bazinga012/mcp_code_executor ||
+| microsandbox | https://docs.microsandbox.dev/ ||
